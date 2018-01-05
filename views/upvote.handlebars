@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="row">
+      <div class="col-lg-12">
+          <h1>Top 20 Most Upvoted</h1>
+          <div class="table-responsive m-t-40">
+              <table id="myTable" class="table table-bordered table-striped">
+                  <thead>
+                      <tr>
+                          <th>Author</th>
+                          <th>Post Title</th>
+                          {{!-- <th>Category</th> --}}
+                          <th>Number of Upvotes</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                    {{#each data}}
+                    <tr>
+                       <th><a href="https://steemit.com/@{{this.author}}" target="_blank">{{this.author}}</a></th>
+                       <td><a href="https://steemit.com{{this.url}}" target="_blank">{{this.title}}</a></td>
+                       {{!-- <td>{{this.category}}</td> --}}
+                       <td>{{this.children}}</td>
+                    </tr>
+                    {{/each}}
+                  </tbody>
+              </table>
+          </div>
+      </div>
+  </div>
+</div>

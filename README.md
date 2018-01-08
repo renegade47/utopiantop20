@@ -10,6 +10,18 @@ https://utopiantop20.herokuapp.com/upvote
 
 https://utopiantop20.herokuapp.com/payout
 
+### Installation
+
+```
+git clone https://github.com/renegade47/utopiantop20.git
+cd utopiantop20
+npm install
+node setup.js
+node server.js
+```
+
+Go to http://localhost:3000
+
 ### Configuration
 - **Platform:** node
 - **Framework**: express
